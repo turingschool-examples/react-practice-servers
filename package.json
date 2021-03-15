@@ -1,0 +1,23 @@
+{
+  "name": "react-practice-servers",
+  "version": "1.0.0",
+  "description": "A repo of servers for FE3 students to use to practice building React apps with async JS",
+  "main": "README.md",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turingschool-examples/react-practice-servers.git"
+  },
+  "author": "Leta Keane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/turingschool-examples/react-practice-servers/issues"
+  },
+  "homepage": "https://github.com/turingschool-examples/react-practice-servers#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
