@@ -31,7 +31,7 @@ app.get('/items/:id', (request, response) => {
 app.post('/items', (request, response) => {
   const submittedItem = request.body;
 
-  for (let requiredParameter of ['title', 'description']) {
+  for (let requiredParameter of ['name', 'amount']) {
     if (!submittedItem[requiredParameter]) {
       return response.status(422).json({ message: `Body is missing required parameter of ${requiredParameter}.`})
     }
@@ -45,8 +45,8 @@ app.post('/items', (request, response) => {
 
 app.delete('/items/:id', (request, response) => {
   const id = parseInt(request.params.id);
-  const filtereditems = app.locals.items.filter(item => item.id !== id);
-  app.locals.items = filtereditems;
+  const filteredItems = app.locals.items.filter(item => item.id !== id);
+  app.locals.items = filteredItems;
 
   response.status(200).json(app.locals.items);
 });

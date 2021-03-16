@@ -17,6 +17,4 @@ This repo is full of several servers you can run to simulate APIs. This is inten
 * [Ideas API](/ideas/README.md)
 * [Grocery List API](/grocery-list/README.md)
 * [Veterinarian Appointments API](/vet-appts/README.md)
-* [Butterflies API](/butterflies/README.md)
 * [UFO Sightings API](/ufo-sightings/README.md)
-
