@@ -32,7 +32,7 @@ app.get('/sightings/:id', (request, response) => {
 app.post('/sightings', (request, response) => {
   const submittedSighting = request.body;
 
-  for (let requiredParameter of ['title', 'description']) {
+  for (let requiredParameter of ['location', 'description']) {
     if (!submittedSighting[requiredParameter]) {
       return response.status(422).json({ message: `Body is missing required parameter of ${requiredParameter}.`})
     }
