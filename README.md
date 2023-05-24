@@ -9,7 +9,7 @@ This repo is full of several servers you can run to simulate APIs. This is inten
 1. Run `npm i` to install dependencies
 1. Find API documentation for each server in the `README` inside its directory
 1. To start a given server, follow the instructions in its `README` 
-1. The server will be listening on port `3001`
+1. The server will be listening on port `3001` (`localhost:3001`)
 1. When you finished practicing, shut down the server with the command `ctrl + c`
 
 ## Available APIs
